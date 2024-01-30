@@ -6,20 +6,41 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 <MainLayout titulo="Portafolio de Lucía" >
 	<h2>Portafolio de Lucía Rey Domínguez</h2>
-<section>
-	
-		<Card href="https://webferrol.com" title="Prueba" body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque sunt sed earum, exercitationem quam, neque fugit incidunt cum iure praesentium ipsum? Ipsam vitae quibusdam provident quidem vel id atque." />
-	
-		<Card href="https://webferrol.com" title="Prueba" body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque sunt sed earum, exercitationem quam, neque fugit incidunt cum iure praesentium ipsum? Ipsam vitae quibusdam provident quidem vel id atque." />
-	
-</section>
+
+	<aside>
+		<img src="../../public/foto.png" alt="Lucía Rey Domínguez">
+		<h3>Lucía Rey Domínguez</h3>
+	</aside>
+
+	<section>
+		<h3>Formación</h3>
+		<ol>
+			<li>
+				<time>2023</time>
+				<h4>Master de Profesorado. Especialidad de Ciencias Experimentales</h4>
+				<p>Facultad de Biología | Universidad de Vigo</p>
+			<li>
+				<time>2021</time>
+				<h4>Grado en Geología</h4>
+				<p>Facultad de Geología | Universidad de Oviedo</p>
+			</li>
+		</ol>
+	</section>
+	<section>
+		<h3>Experiencia laboral</h3>
+		<ol>
+			<li>
+				<time>2020</time>
+				<h4>Facultad de Geología, Universidad de Oviedo</h4>
+				<p>Beca de Colaboración. Tratamiento de datos y trabajo de laboratorio.</p>
+			</li>
+			<li>
+				<time>2019</time>
+				<h4>Soluciones y Proyectos de Información SL.</h4>
+				<p>Prácticas. Uso del programa de tratamiento de datos geográficos QGIS y Excel.</p>
+			</li>
+		</ol>
+
+	</section>
 
 </MainLayout>
-
-<style>
-	section {
-		display: flex;
-		gap: .5rem;
-		
-	}
-</style>
