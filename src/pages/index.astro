@@ -1,8 +1,25 @@
 ---
+import Card from "../components/ui/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 
 
 ---
-<MainLayout titulo="Portafolio de Lucía">
-	<h1>Portafolio de Lucía Rey Domínguez</h1>
+<MainLayout titulo="Portafolio de Lucía" >
+	<h2>Portafolio de Lucía Rey Domínguez</h2>
+<section>
+	
+		<Card href="https://webferrol.com" title="Prueba" body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque sunt sed earum, exercitationem quam, neque fugit incidunt cum iure praesentium ipsum? Ipsam vitae quibusdam provident quidem vel id atque." />
+	
+		<Card href="https://webferrol.com" title="Prueba" body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque sunt sed earum, exercitationem quam, neque fugit incidunt cum iure praesentium ipsum? Ipsam vitae quibusdam provident quidem vel id atque." />
+	
+</section>
+
 </MainLayout>
+
+<style>
+	section {
+		display: flex;
+		gap: .5rem;
+		
+	}
+</style>

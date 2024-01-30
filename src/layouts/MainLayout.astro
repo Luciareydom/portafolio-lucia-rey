@@ -1,14 +1,29 @@
 ---
+import MainHeader from '../components/sections/MainHeader.astro';
 import '../styles/global.css'
+
+// Determina tipo de datos y ayuda con autocompletado
+interface Props {
+	titulo: string;
+	idioma?: string;
+	descripcion?: string;
+}
+
+// Deconstructing de arrays como objetos
+const { titulo = 'Portafolio de Lucía', idioma = 'es', descripcion = 'Portafolio personal de experiencia y formación.'} = Astro.props
 ---
-<html lang="es">
+<html lang={idioma}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={descripcion}>
 		<meta name="generator" content={Astro.generator} />
-		<title>{Astro.props.titulo}</title>
+		<title>{titulo}</title>
+		<link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+
 	</head>
 	<body>
+		<MainHeader />
 		<slot />		
 	</body>
 </html>
