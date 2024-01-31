@@ -1,4 +1,68 @@
+ul {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+fieldset {
+    border-style: none;
+    
+}
+
+input {
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    padding: 1px;
+    border: solid 1px;
+    border-radius: 3px;
+    min-height: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: rgb(246, 249, 253);
+
+}
+
+textarea {
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    display: block;
+    border: solid 1px;
+    border-radius: 3px;
+    width:100%;
+    resize: vertical;
+    
+    background-color: rgb(246, 249, 253);
+}
+
+button {
+    width: fit-content;
+}
+
 .home-icon {
     height: 2rem;
     width: 2rem;
+}
+
+.envelope-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.foto {
+    max-width: 100%;
 }

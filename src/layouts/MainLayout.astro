@@ -1,6 +1,12 @@
 ---
 import MainHeader from '../components/sections/MainHeader.astro';
+
+import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/500.css'
+import '@fontsource/poppins/700.css'
+
 import '../styles/global.css'
+import '../styles/custom.css'
 
 // Determina tipo de datos y ayuda con autocompletado
 interface Props {
@@ -27,3 +33,9 @@ const { titulo = 'Portafolio de Lucía', idioma = 'es', descripcion = 'Portafoli
 		<slot />		
 	</body>
 </html>
+
+<style>
+	html {
+		background-color: rgb(231, 245, 255);
+	}
+</style>

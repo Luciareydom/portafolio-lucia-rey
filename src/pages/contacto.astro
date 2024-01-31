@@ -1,18 +1,25 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+
 ---
 
 
 <MainLayout titulo="Contacto" descripcion="Soy Lucía, contacta conmigo: lreydom.appventurers@gmail.com">
-	<h2>Página de contacto</h2>
+	<h2>Contacta conmigo!</h2>
 
 	<form action="">
 		<fieldset class="form">
-			<legend>Contacta conmigo!</legend>
+			
 			<label>Nombre:<input type="text" class="name" name="name" required></label>
-			<label><input type="email" class="email" name="email" placeholder="lreydom.appventures@gmail.com" required>Email:</label>
-			<textarea name="message" id="message" cols="30" rows="10" placeholder="Escribe aquí tu mensaje"></textarea>
+			<label>Email:<input type="email" class="email" name="email" placeholder="lreydom.appventures@gmail.com" required></label>
+			<label>Déjame un mensaje:<textarea name="message" id="message" cols="30" rows="10" placeholder="Escribe aquí"></textarea></label>
 		</fieldset>
 		<button type="button">Enviar</button>
 	</form>
 </MainLayout>
+
+<style>
+	h2 {
+		margin: 3rem;
+	}
+</style>

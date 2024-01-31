@@ -1,26 +1,31 @@
 ---
+import Envelope from '../iconos/Envelope.astro'
 import Home from '../iconos/Home.astro'
 
-import '../../styles/custom.css'
 ---
 
 <header class="main-header">
     <h1 class="logo title">
-        Porfolio de Lucía
+        Lucía's Portfolio
     </h1>
     <nav class="navbar">
-        <a href="/" style="font-size: 8px">Home
+        <a href="/" >
         <Home className="home-icon" /></a>
-        <a href="/contacto">Contacto</a>
+        <a href="/contacto"><Envelope className="envelope-icon"/></a>
+        
     </nav>
 </header>
 
 <style>
     header {
-        margin: 0 1rem;
+        margin: 0;
+        padding: 0 1.5rem;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+
+        background-color: rgb(202, 217, 236);
 }
 </style>
